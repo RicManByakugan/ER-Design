@@ -170,56 +170,220 @@
     <section class="pt-5 blog-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="p-0 booking-form">
-                                <form action="#">
-                                    <div class="select-option">
-                                        <label for="guest">Depart:</label>
-                                        <select id="guest">
-                                            <option value="Antananarivo">Antananarivo</option>
-                                            <option value="Antsirabe">Antsirabe</option>
-                                            <option value="Toamasina">Toamasina</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-option">
-                                        <label for="guest">Destination:</label>
-                                        <select id="guest">
-                                            <option value="Antananarivo">Antananarivo</option>
-                                            <option value="Antsirabe">Antsirabe</option>
-                                            <option value="Toamasina">Toamasina</option>
-                                        </select>
-                                    </div>
-                                    <div class="check-date">
-                                        <label for="date-out">Date:</label>
-                                        <input type="text" class="date-input">
-                                        <i class="icon_calendar"></i>
-                                    </div>
-                                    <div class="select-option">
-                                        <label for="room">Nombre de personne:</label>
-                                        <input type="number" class="form-control-default" min="1" max="4" value="1">
-                                    </div>
-                                    <button type="submit">Entrer</button>
-                                </form>
+                            <div class="float-right">
+                                
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="container d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-start align-items-start">
                                 <h4>Antananarivo</h4>
-                                <i class="fa fa-long-arrow-right"></i>
+                                <div class="d-grid text-center ml-2 mr-2">
+                                    <small class="text-muted text-underline">vers</small>
+                                </div>
                                 <h4>Antsirabe</h4>
                             </div>
+                            <h5 class="text-muted"><small>Mardi 10 Novembre 2025</small></h5>
                         </div>
                     </div>
-                    <div class="mt-3 card">
-                        <div class="card-body">
-                            <h6>Depart : <b>06h00</b> matin</h6>
-                            <h6>Prix : <b>20,000</b></h6>
+                    <div class=" mt-3 row">
+                        <div class="col-md-4">
+                            <div class="pricingTable">
+                                <div class="pricingTable-header">
+                                    <h3 class="mb-3 text-uppercase">Economique</h3>
+                                </div>
+                                <div class="price-value price-economy">
+                                    <span class="amount">35 000 Ar</span>
+                                </div>
+                                <div class="border-bottom p-3 pb-0 container">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5><small>Départ<br></small><b>18H</b></h5>
+                                        <div class="text-left">
+                                            <button class="btn btn-sm btn-outline-primary" data-toggle="collapse"
+                                                data-target="#item-trip1">Place</button>
+                                        </div>
+                                        <h5><small>Place libre<br></small> <b>16</b></h5>
+
+                                    </div>
+                                </div>
+                                <div class="collapse" id="item-trip1">
+                                    <div class="mt-3 d-flex justify-content-between align-items-start">
+                                        <div class="row">
+                                            <div class="col-sm-7">
+                                                <div class="seat-container">
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-driver">D</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">1</div>
+                                                        <div class="seat seat-occupied">2</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">3</div>
+                                                        <div class="seat seat-occupied">4</div>
+                                                        <div class="seat seat-occupied">5</div>
+                                                        <div class="seat seat-free">6</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">7</div>
+                                                        <div class="seat seat-free">8</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">9</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">10</div>
+                                                        <div class="seat seat-free">11</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">12</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">13</div>
+                                                        <div class="seat seat-free">14</div>
+                                                        <div class="seat seat-free">15</div>
+                                                        <div class="seat seat-free">16</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <small>Choisir place</small>
+                                                <div class="d-ruby-text" id="placeChoice"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="mt-2 btn btn-sm btn-primary btn-block">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="pricingTable">
+                                <div class="pricingTable-header">
+                                    <h3 class="mb-3 text-uppercase">VIP</h3>
+                                </div>
+                                <div class="price-value price-vip">
+                                    <span class="amount">35 000 Ar</span>
+                                </div>
+                                <div class="border-bottom p-3 pb-0 container">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5><small>Départ<br></small><b>18H</b></h5>
+                                        <div class="text-left">
+                                            <button class="btn btn-sm btn-outline-primary" data-toggle="collapse"
+                                                data-target="#item-trip2">Place</button>
+                                        </div>
+                                        <h5><small>Place libre<br></small> <b>16</b></h5>
+
+                                    </div>
+                                </div>
+                                <div class="collapse" id="item-trip2">
+                                    <div class="mt-3 d-flex justify-content-between align-items-start">
+                                        <div class="row">
+                                            <div class="col-sm-7">
+                                                <div class="seat-container">
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-driver">D</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">1</div>
+                                                        <div class="seat seat-occupied">2</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">3</div>
+                                                        <div class="seat seat-occupied">4</div>
+                                                        <div class="seat seat-occupied">5</div>
+                                                        <div class="seat seat-free">6</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">7</div>
+                                                        <div class="seat seat-free">8</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">9</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">10</div>
+                                                        <div class="seat seat-free">11</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">12</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">13</div>
+                                                        <div class="seat seat-free">14</div>
+                                                        <div class="seat seat-free">15</div>
+                                                        <div class="seat seat-free">16</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <small>Choisir place</small>
+                                                <div class="d-ruby-text" id="placeChoice"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="mt-2 btn btn-sm btn-primary btn-block">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="pricingTable">
+                                <div class="pricingTable-header">
+                                    <h3 class="mb-3 text-uppercase">LITE</h3>
+                                </div>
+                                <div class="price-value price-lite">
+                                    <span class="amount">35 000 Ar</span>
+                                </div>
+                                <div class="border-bottom p-3 pb-0 container">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5><small>Départ<br></small><b>18H</b></h5>
+                                        <div class="text-left">
+                                            <button class="btn btn-sm btn-outline-primary" data-toggle="collapse"
+                                                data-target="#item-trip3">Place</button>
+                                        </div>
+                                        <h5><small>Place libre<br></small> <b>16</b></h5>
+
+                                    </div>
+                                </div>
+                                <div class="collapse" id="item-trip3">
+                                    <div class="mt-3 d-flex justify-content-between align-items-start">
+                                        <div class="row">
+                                            <div class="col-sm-7">
+                                                <div class="seat-container">
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-driver">D</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">1</div>
+                                                        <div class="seat seat-occupied">2</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">3</div>
+                                                        <div class="seat seat-occupied">4</div>
+                                                        <div class="seat seat-occupied">5</div>
+                                                        <div class="seat seat-free">6</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">7</div>
+                                                        <div class="seat seat-free">8</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">9</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">10</div>
+                                                        <div class="seat seat-free">11</div>
+                                                        <div class="seat seat-empty">&nbsp;</div>
+                                                        <div class="seat seat-free">12</div>
+                                                    </div>
+                                                    <div class="seat-row">
+                                                        <div class="seat seat-free">13</div>
+                                                        <div class="seat seat-free">14</div>
+                                                        <div class="seat seat-free">15</div>
+                                                        <div class="seat seat-free">16</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <small>Choisir place</small>
+                                                <div class="d-ruby-text" id="placeChoice"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="mt-2 btn btn-sm btn-primary btn-block">Valider</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -306,6 +470,31 @@
             </form>
         </div>
     </div>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            addSeatEventListeners();
+        });
+
+        function addSeatEventListeners() {
+            document.querySelectorAll('.seat-free').forEach(seat => {
+                seat.addEventListener('click', function () {
+                    if (this.classList.contains('seat-free')) {
+                        this.classList.remove('seat-free');
+                        this.classList.add('seat-selected');
+                        document.querySelector('#placeChoice').innerHTML += "<div class='seat seat-choice' data-seat='" + this.innerHTML + "'>" + this.innerHTML + "</div>";
+                    } else if (this.classList.contains('seat-selected')) {
+                        this.classList.remove('seat-selected');
+                        this.classList.add('seat-free');
+                        let seatChoice = document.querySelector("#placeChoice .seat-choice[data-seat='" + this.innerHTML + "']");
+                        if (seatChoice) {
+                            seatChoice.remove();
+                        }
+                    }
+                });
+            });
+
+        }
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
