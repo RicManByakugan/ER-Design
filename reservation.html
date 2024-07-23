@@ -27,7 +27,7 @@
     <section class="hero-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-none-tablet">
+                <div class="col-lg-4 d-none-tablet">
                     <div class="hero-text">
                         <h1>COMPANY NAME</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi unde saepe enim deserunt
@@ -36,37 +36,51 @@
                         <a href="#" class="primary-btn">Link</a>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                <div class="col-lg-6 offset-xl-2 offset-lg-1 h-100">
                     <div class="booking-form">
-                        <h3>Reserver</h3>
-                        <form action="#">
-                            <div class="select-option">
-                                <label for="guest">Depart:</label>
-                                <select id="guest">
-                                    <option value="Antananarivo">Antananarivo</option>
-                                    <option value="Antsirabe">Antsirabe</option>
-                                    <option value="Toamasina">Toamasina</option>
-                                </select>
-                            </div>
-                            <div class="select-option">
-                                <label for="guest">Destination:</label>
-                                <select id="guest">
-                                    <option value="Antananarivo">Antananarivo</option>
-                                    <option value="Antsirabe">Antsirabe</option>
-                                    <option value="Toamasina">Toamasina</option>
-                                </select>
-                            </div>
-                            <div class="check-date">
-                                <label for="date-out">Date:</label>
-                                <input type="text" class="date-input">
-                                <i class="icon_calendar"></i>
-                            </div>
-                            <div class="select-option">
-                                <label for="room">Nombre de personne:</label>
-                                <input type="number" class="form-control-default" min="1" max="4" value="1">
-                            </div>
-                            <button type="submit">Entrer</button>
-                        </form>
+                        <div>
+                            <h3>Reserver</h3>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="select-option">
+                                            <label for="guest">Depart:</label>
+                                            <select id="guest">
+                                                <option value="Antananarivo">Antananarivo</option>
+                                                <option value="Antsirabe">Antsirabe</option>
+                                                <option value="Toamasina">Toamasina</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="select-option">
+                                            <label for="guest">Destination:</label>
+                                            <select id="guest">
+                                                <option value="Antananarivo">Antananarivo</option>
+                                                <option value="Antsirabe">Antsirabe</option>
+                                                <option value="Toamasina">Toamasina</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="check-date">
+                                            <label for="date-out">Date:</label>
+                                            <input type="text" class="date-input">
+                                            <i class="icon_calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="select-option">
+                                            <label for="room">Nombre de personne:</label>
+                                            <input type="number" class="form-control-default" min="1" max="4" value="1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit">Entrer</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

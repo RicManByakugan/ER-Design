@@ -571,7 +571,7 @@ ol {
 }
 
 .hero-text {
-	padding-top: 145px;
+	/* padding-top: 145px; */
 }
 
 .hero-text h1 {
@@ -686,6 +686,13 @@ ol {
 	width: 100%;
 	height: 46px;
 	margin-top: 30px;
+	transition: 0.5s;
+}
+
+.booking-form form button:hover{
+	background: #27c2de;
+	color: #fff;
+	transition: 0.5s;
 }
 
 .hero-slider {
