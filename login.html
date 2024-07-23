@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sona | Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            height: 100vh;
+            background: url('../img/mada/route.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .icon-image {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <img src="img/favicon.ico" class="icon-image" alt="Icon" width="70" height="70">
+
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="row w-100">
+            <div class="col-sm-4 mx-auto">
+                <div class="box w-100">
+                    <h2>Se connecter</h2>
+                    <form>
+                        <div class="inputBox">
+                            <input type="text" name="" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" name="" required>
+                            <label>Mot de passe</label>
+                        </div>
+                        <div class="error-message" id="error-message"></div>
+                        <input type="submit" value="Entrer" class="w-100">
+                        <hr>
+                        <button class="btn-box w-100">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
