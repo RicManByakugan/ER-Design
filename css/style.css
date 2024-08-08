@@ -689,7 +689,7 @@ ol {
 	transition: 0.5s;
 }
 
-.booking-form form button:hover{
+.booking-form form button:hover {
 	background: #27c2de;
 	color: #fff;
 	transition: 0.5s;
@@ -2858,59 +2858,6 @@ ol {
 	}
 }
 
-.seat {
-	width: 30px;
-	height: 30px;
-	margin: 3px;
-	border-radius: 5px;
-	text-align: center;
-	line-height: 30px;
-	cursor: pointer;
-}
-
-.seat-free {
-	background-color: #28a745;
-	color: white;
-}
-
-.seat-choice {
-	background-color: #0069d9;
-	color: white;
-	cursor: default !important;
-}
-
-.seat-occupied {
-	background-color: #dc3545;
-	color: white;
-	cursor: not-allowed;
-}
-
-.seat-selected {
-	background-color: #ffc107;
-	color: white;
-}
-
-.seat-driver {
-	background-color: #6c757d;
-	color: white;
-	cursor: not-allowed;
-}
-
-.seat-empty {
-	background-color: white;
-	cursor: not-allowed;
-}
-
-.seat-row {
-	display: flex;
-	justify-content: start;
-	margin-bottom: 5px;
-}
-
-.seat-container {
-	border: 1px solid rgba(0, 0, 0, .125);
-}
-
 .d-ruby-text {
 	display: ruby-text;
 }
@@ -3030,4 +2977,117 @@ ol {
 
 .box .signup-link a:hover {
 	color: #1cb1f5;
+}
+
+
+.ticket {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+}
+
+.ticket img {
+	width: 120px;
+	height: auto;
+	border-radius: 8px;
+	margin-right: 20px;
+}
+
+.ticket .info {
+	flex: 1;
+}
+
+.ticket h2 {
+	font-size: 1.5em;
+	color: #333;
+	font-weight: bold;
+}
+
+.ticket .details {
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.ticket .seat-container {
+	width: 100px;
+}
+
+.ticket .container-state {
+	width: 50px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: 16px;
+    top: 0px;
+	border-radius: 0 8px 0 0;
+    text-align: center;
+}
+
+.ticket .container-state h4{
+	font-family: oswald;
+    color: white;
+}
+
+.seat {
+	width: 21px;
+    height: 21px;
+    margin: 3px;
+    text-align: center;
+    line-height: 21px;
+    font-size: 11px;
+	cursor: pointer;
+}
+
+.offre-1 {
+	background-color: #0069d9;
+}
+.offre-2 {
+	background-color: #28a745;
+}
+.offre-3 {
+	background-color: #ffc107;
+}
+
+.seat-free {
+	background-color: #28a745;
+	color: white;
+}
+
+.seat-choice {
+	background-color: #0069d9;
+	color: white;
+	cursor: default !important;
+}
+
+.seat-occupied {
+	background-color: #dc3545;
+	color: white;
+	cursor: not-allowed;
+}
+
+.seat-selected {
+	background-color: #ffc107;
+	color: white;
+}
+
+.seat-driver {
+	background-color: #6c757d;
+	color: white;
+	cursor: not-allowed;
+}
+
+.seat-empty {
+	background-color: white;
+	cursor: not-allowed;
+}
+
+.seat-row {
+	display: flex;
+	justify-content: start;
+	margin-bottom: 5px;
 }
